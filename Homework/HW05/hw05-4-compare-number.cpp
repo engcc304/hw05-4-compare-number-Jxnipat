@@ -25,3 +25,26 @@
     Output:
         Number1 equal Number2
 */
+#include <stdio.h>
+
+int main() {
+    int number1, number2;
+
+    // รับค่าจากผู้ใช้
+    printf("Input 1: ");
+    scanf("%d", &number1);
+
+    printf("Input 2: ");
+    scanf("%d", &number2);
+
+    // เปรียบเทียบและแสดงผลลัพธ์
+    if (number1 < number2) {
+        printf("Number1 lower than Number2\n");
+    } else if (number1 > number2) {
+        printf("Number1 greater than Number2\n");
+    } else {
+        printf("Number1 equal Number2\n");
+    }
+
+    return 0;
+}
